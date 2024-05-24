@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 public class UsuarioController {
-
     @RequestMapping(value = "usuarios")
     public List <Usuario> getUsuarios() {
         List<Usuario> usuarios = new ArrayList<>();
