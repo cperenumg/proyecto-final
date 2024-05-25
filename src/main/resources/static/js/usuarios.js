@@ -18,8 +18,8 @@ async function cargarUsuarios() {
     let listadoHtml = '';
 
     for (let usuario of usuarios) {
-        let usuarioHtml = '<tr><td>'+usuario.id+'</td><td>' + usuario.nombre + ' ' + usuario.nombre + '</td><td>'
-            + usuario.email + '</td><td>'
+        let usuarioHtml = '<tr><td>'+usuario.id+'</td> <td>'+usuario.codigo+'</td> <td>' + usuario.nombre + ' ' + usuario.nombre + '</td><td>'
+            + usuario.email + '</td> <td>'
             + usuario.telefono
             + '</td><td><a href="#" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></a></td></tr>';
 
