@@ -75,7 +75,7 @@ public class UsuarioController {
             @RequestHeader(value="Authorization") String token,
             @PathVariable Integer id
     ) {
-        if (validarToken(token)) { return; }
+        if (!validarToken(token)) { return; }
 
         usuarioDao.eliminar(id);
     }
