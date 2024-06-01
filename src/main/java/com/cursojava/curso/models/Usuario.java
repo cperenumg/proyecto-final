@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Setter;
 import lombok.Getter;
 import lombok.ToString;
+import org.hibernate.annotations.UuidGenerator;
 
 @Entity
 @Table(name = "usuario")
@@ -17,6 +18,7 @@ public class Usuario {
     private Integer id;
 
     @Getter @Setter @Column(name = "codigo")
+    @UuidGenerator
     private String codigo;
 
     @Getter @Setter @Column(name = "nombre")
