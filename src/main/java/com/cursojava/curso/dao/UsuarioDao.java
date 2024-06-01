@@ -9,4 +9,6 @@ public interface UsuarioDao {
     List<Usuario> getUsuarios();
 
     void eliminar(Integer id);
+
+    void registrar(Usuario usuario);
 }
