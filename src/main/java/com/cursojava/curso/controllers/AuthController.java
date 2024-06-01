@@ -22,11 +22,11 @@ public class AuthController {
 
         Usuario usuarioLogueado = usuarioDao.obtenerUsuarioPorCredenciales(usuario);
         if (usuarioLogueado != null) {
-            String tokenJWT = jwtutil.create(String.valueOf(usuarioLogueado.getId()), usuarioLogueado.getEmail());
+            String tokenJwt = jwtutil.create(String.valueOf(usuarioLogueado.getId()), usuarioLogueado.getEmail());
 
-            return tokenJWT;
+            return tokenJwt;
         }
 
-        return "Fail";
+        return "FAIL";
     }
 }
